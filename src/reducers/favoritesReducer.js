@@ -12,8 +12,12 @@ const favoritesReducer = (state = initialState, action) => {
                 ...state,
                 displayFavorites: !state.displayFavorites
             }
-        // case ADD_FAVORITE:
-        //     return
+        case ADD_FAVORITE:
+            console.log('working');
+            return {
+                ...state,
+                favorites: [...state.favorites, action.payload]
+            }
         // case REMOVE_FAVORITE:
         //     return
         default:
