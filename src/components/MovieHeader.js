@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 import { toggleFavorites } from '../actions/favoritesActions';
 
 const MovieHeader = (props) => {
-    // const displayFavorites = true;
     
     return(<div className="table-title">
         <div className="row">

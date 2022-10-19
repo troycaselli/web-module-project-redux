@@ -71,8 +71,4 @@ const AddMovieForm = (props) => {
     </div>);
 }
 
-const mapStateToProps = state => {
-    return {}
-}
-
-export default connect(mapStateToProps, {addMovie})(AddMovieForm);
+export default connect(null, {addMovie})(AddMovieForm);
